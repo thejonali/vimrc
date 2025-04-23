@@ -27,6 +27,10 @@ set ignorecase
 nnoremap <C-a> :tabprevious<CR>
 nnoremap <C-s> :tabnext<CR>
 
+" Enable persistent undo
+set undofile
+set undodir=~/.vim/undodir
+
 " Plugin Install
 " SnipMate
 filetype off
@@ -52,6 +56,12 @@ map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 map <C-L> <C-W>l<C-W>_
 
+" Better split navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 " Map ctrl t to new tab
 map <c-t> :tabnew <Enter>
 map c-< g-T
@@ -59,6 +69,9 @@ map c-> g-t
 " Map escape to capsLock
 nnoremap yy i
 inoremap yy <ESC>l
+
+" Use system clipboard
+set clipboard=unnamedplus
 
 "unhighlight the searched text
 nnoremap <silent> <C-l> :nohl<CR><C-l>

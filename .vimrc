@@ -32,3 +32,16 @@ set ignorecase
 set smartcase
 
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" Enable persistent undo
+set undofile
+set undodir=~/.vim/undodir
+
+" Better split navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Use system clipboard
+set clipboard=unnamedplus
