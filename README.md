@@ -7,7 +7,7 @@
 4. **Tab and Indentation Settings**: Configured `tabstop`, `shiftwidth`, and `autoindent` for consistent code formatting.
 5. **Custom Key Mappings**: Added key mappings for navigation, tab management, and toggling search highlights.
 
-## Differences Between the Two vimrc Files
+## Windows and Unix vimrc files
 - **Platform-Specific Settings**: The `_vimrc` file includes settings tailored for Windows (e.g., `set guifont`), while `.vimrc` is designed for Unix systems.
 - **Plugins**: The `_vimrc` file includes plugin-related configurations (e.g., `SnipMate`), whereas `.vimrc` does not.
 - **Key Mappings**: The `_vimrc` file has more extensive custom key mappings compared to `.vimrc`.
